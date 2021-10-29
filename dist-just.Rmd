@@ -1,0 +1,335 @@
+---
+title: "Revisión de literatura"
+subtitle: "Percepciones de justicia distributiva"  
+author: "Martín Venegas M"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      countIncrementalSlides: false
+      beforeInit: "https://jciturras.github.io/ayudantia-sol3051/slides/00-intro-r/macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    css: ["xaringan-coes.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    #seal: false # esto omite title slide automática  
+---
+class: center, middle
+
+# _Artículo justicia distributiva LA_
+```{r setup, include=FALSE,eval=TRUE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+```
+
+```{r cache=FALSE, include=FALSE}
+library(RefManageR)
+bibobject <- BibOptions(check.entries = FALSE,
+           hyperlink = FALSE,
+           dashed = FALSE)
+
+BibOptions(bibobject)
+
+myBib <- ReadBib("perc-justicia.bib", check = FALSE)
+```
+
+---
+class: inverse, center, middle
+
+# Estructura de la presentación
+
+1. Conceptualización de justicia distributiva
+2. Percepciones de justicia distributiva
+3. Vertientes empíricas
+
+---
+
+# Conceptualización de justicia distributiva
+
+## Primeras consideraciones
+
+- La justicia distributiva es una temática inmensamente trabajada desde muchas discplinas. 
+  * Ya en reviews del 1980 los autores decían que era imposible revisar toda la literatura para un único trabajo.
+  
+- Existen distintas formas de organizar la literatura.
+
+- El concepto de "percepciones de justicia distributiva" es inconsistente en la literatura. Por eso, primero hablaré de **evaluaciones de justicia** y luego de **percepciones de justicia distributiva**
+
+---
+
+## ¿Qué es las justicia distributiva?
+
+Es una dimensión de los estudios de justicia social que se preocupa por comprender lo qué es justo en la distribución de recursos de una sociead.
+
+---
+
+## Dos distinciones importantes: 
+
+1) Normativa v/s empírica
+
+Lo que *debería* guiar una distribución justa de recursos v/s lo que *efectivamente* guía la justicia en la distribución de recursos
+
+2) Relacionada a los principios v/s relacionada a las recompensas
+
+El estudio de los principios que guían una distribución justa v/s el estudio de las evaluaciones que hace la gente respecto de los resultados de una distribución
+
+---
+
+## Estudio de los principios de justicia
+
+- Macro v/s micro principios de justicia (utópicos y existenciales)
+
+- Cantidad de principios: uno o varios.
+
+---
+
+### Ejemplo: Taxonomía `r RefManageR::Cite(myBib, c("sabbagh_Taxonomy_2001"))`
+
+#### Macro (utópico)
+
+- Teorías **macro-unidimensionales**
+  * Normativa: Utilitarismo
+  * Empírica: _Welfarism_
+
+- Teorías **macro-multidimensionales**
+  * Normativa: Teoría de Rawls
+  * Empírica: Aplicación de la teoría de Rawls
+  
+---
+
+### Ejemplo: Taxonomía `r RefManageR::Cite(myBib, c("sabbagh_Taxonomy_2001"))`
+
+#### Micro (existencial)
+
+- Teorías **micro-unidimensionales**
+  * Normativa: Aristoteles
+  * Empírica: _Equity theories_
+  
+- Teorías **micro-multidimensionales**
+  * Normativa: Miller
+  * Empírica: Enfoque multiprincipio (igualdad, equidad y necesidad)
+
+---
+
+## Estudio de las recompensas justas
+
+- Generalmente se estudian los _just ocupational earnings_
+
+- Se refieren a evaluaciones de justicia sobre distribuciones concretas de recompensas a los individuos, en el sentido de expresiones como "es justo que la persona A recibe X" `r RefManageR::Cite(myBib, c("castillo_Legitimacy_2011"))`
+
+---
+
+### Ejemplo: teorías que buscan explicar qué es considerada una recompensa justa
+
+- Teoría de la deprivación relativa `r RefManageR::Cite(myBib, c("runciman_Relative_1966", "gurr_Why_1970"))`: las personas en situaciones de privación relativa perciben los resultados más injustos
+
+- Teorías de la equidad `r RefManageR::Cite(myBib, c("adams_Wage_1963", "homans_Commentary_1976"))`: las personas aceptan resultados como justos cuando son proporcionales a las entradas
+
+- Teoría del valor estatus `r RefManageR::Cite(myBib, c("berger_Structural_1972"))`
+: las personas comparan lo justo de los resultados con una _estructura referencial_
+
+- Teoría de las evaluaciones de justicia `r RefManageR::Cite(myBib, c("jasso_Justice_1978", "jasso_New_1980", "jasso_Thinking_2015"))`: las personas comparan los resultados existentes con los resultados que consideran justos
+
+---
+
+### Teoría de las evaluaciones de justicia
+
+- `r RefManageR::Citet(myBib, c("jasso_New_1980"))`
+ propone un marco de estudio para las evaluaciones de justicia.
+
+  * Preguntas orientadoras
+  
+  * Conceptos básicos
+  
+  * Medición simple y universal
+  
+---
+
+#### Preguntas orientadoras
+
+1. ¿Qué piensan los individuos y las sociedades que es justo y por qué?
+
+2. ¿Cómo moldean las ideas de justicia la determinación de situaciones reales?
+
+3. ¿Cuál es la magnitud de la injusticia percibida asociada con las desviaciones de la justicia perfecta?
+
+4. ¿Cuáles son las consecuencias sociales y de comportamiento de la injusticia percibida?
+
+---
+
+#### Conceptos básicos
+
+**Actores**
+
+- _Observador_, que forma ideas de justicia y juzga la justicia o injusticia de situaciones reales específicas;
+
+- _Premiado_, quien recibe una cantidad o nivel de la cosa distribuida;
+
+- _Asignador_, que hace la distribución.
+
+---
+
+**Cantidades**
+
+_Recompensa real_: es la cantidad o el nivel de la recompensa recibida por el premiado
+
+_Recompensa justa_: es la cantidad o el nivel de la recompensa que el Observador considera justa para el Premiado (que puede, o no, ser el mismo que el Observador).
+
+_Evaluación de la justicia_: es la apreciación del Observador de que el Premiado está justa o injustamente recompensado, y, si está injustamente recompensado, si está infra o sobre recompensado, y en qué grado
+
+_Consecuencias de la justicia_: la Evaluación de la Justicia del Observador desencadena una larga serie de Consecuencias de la Justicia, que se extiende a todos los dominios del comportamiento humano y la vida social, dando a la justicia el carácter de una fuerza socioconductual.
+
+---
+
+#### Medición
+
+\begin{equation}
+   \text{Evaluación de Justicia}= ln(\frac{\text{Recompensa real}}{\text{Recompensa Justa}})
+\end{equation}
+
+0 es justicia perfecta, valores negativos es subrecompensado y valores positivos sobrerecompensado.
+
+- La notación logarítmica expresa matemáticamente que la subrecompensa se siente más fuerte que la sobrerecompensa.
+
+- La formula se expresa en unidades de justicia y no depende de la recompensa estudiada.
+---
+
+## Percepciones de justicia distributiva
+
+La justicia económica distributiva es la medida en que los individuos creen que la economía distribuye los recursos de forma justa `r RefManageR::Cite(myBib, c("ng_Perception_2005"))`.
+
+*Comentario*: la conceptualización es la misma que las evaluaciones de justicia, solo se mide de otras formas.
+
+
+
+---
+
+### Antecedentes:
+
+`r RefManageR::Citet(myBib, c("ng_Perception_2005"))`:
+
+- Según la **teoría del interés propio**, la percepción de los individuos de la justicia distributiva económica depende de cuánto se benefician personalmente de la asignación.
+
+- La **teoría de la creencia en un mundo justo** sostiene que algunas personas necesitan creer que el mundo es estable, ordenado y justo, y esta necesidad les impulsa a percibir una mayor justicia económica distributiva.
+
+- La **teoría de la atribución** sugiere que la percepción de la justicia distributiva depende de si el individuo atribuye el resultado económico a una causa interna o externa. -> Predicción más fuerte
+
+- Según la **perspectiva de la ideología**, las personas son socializadas en ideologías que prescriben valores, actitudes y comportamientos en varios dominios de contenido, incluidos los juicios de justicia -> Segunda predicción más fuerte
+
+
+---
+
+## Vertientes empíricas
+
+1. Psicología del desarrollo -> formación de percepciones de justicia en niños
+
+2. Management y estudios organizacionales -> percepciones de justicia distributiva (fairness) en el trabajo y su relación con variables afines.
+
+3. Estudios relacionados a actitudes políticas, conflicto (sociología, psicología social)
+
+---
+
+## Estudios afines
+
+- **`r RefManageR::Citet(myBib, c("chang_Corruption_2021"))`** 
+  * Confianza política ----(+)----> percepción just. dist. (y viceversa)
+  * Usa la misma pregunta que nosotros (Asian Barometer)
+  
+- **`r RefManageR::Citet(myBib, c("zmerli_Income_2015"))`**
+  * Perc just. dist ----(+)----> confianza política
+  
+- **`r RefManageR::Citet(myBib, c("chiang_Judgment_2011"))`**
+  * La estructura de las redes de comparación influyen en los juicios de justicia dist. Estos juicios son influidos por el ingreso relativo.
+
+---
+
+## Estudios afines
+
+- **`r RefManageR::Citet(myBib, c("cramer_Views_2011"))`**
+  * Efecto de la clase, percepción de bienestar y tendencia política en las percepciones de just. dist.
+  * Testean tres teorías macro. No encuentran apoyo para teorías del conflicto distributivo. Los resultados de las teorías del desarrollo económico y deprivación relativa son variados, aunque la última tiene más evidencia.
+  * Usan la misma pregunta que nosotros (Latinobarometro)
+  
+- **`r RefManageR::Citet(myBib, c("khaola_Perceptions_2010"))`** 
+  * Los sentimientos de impotencia económica (_self interest theory_) y atribución externa para el desempleo (_atribution theory_) ----(+)----> percepciones de la injusticia distributiva económica
+  
+---
+
+## Estudios afines
+  
+- **`r RefManageR::Citet(myBib, c("reyes_Are_2021"))`**
+  * Los individuos de mayor edad, desempleados y de izquierdas son más propensos a percibir la distribución de los ingresos como muy injusta
+  * El Gini se correlaciona lineal y fuertemente con las percepciones de injusticia distributiva.
+  * Usan la misma pregunta que nosotros (Latinobarometro)
+  
+
+- **`r RefManageR::Citet(myBib, c("salgado_Adolescents_2020"))`**
+  * Los adolescentes de diferentes SES no difieren en la cantidad de desigualdad considerada justa
+  
+---
+
+# Estudios afines
+  
+- **`r RefManageR::Citet(myBib, c("saxton_Governance_2021"))`**
+  * Percepciones de injusticia distributiva ----(-)----> satisfacción con la democracia
+  
+- **`r RefManageR::Citet(myBib, c("schneider_Poverty_2015"))`**
+  * Atribuciones de pobreza interna ----(+)----> percepciones de justicia distributiva
+  * Atribuciones de pobreza externa ----(-)----> percepciones de justicia distributiva
+  
+- **`r RefManageR::Citet(myBib, c("lee_Political_2021"))`**
+  * Percepción just. dist ----(+)----> autoeficacia política externa e interna
+  
+---
+
+## Comentario final
+
+- Contamos con una conceptualización de justicia distributiva
+- Contamos con algunos trabajos empíricos, inclusive en AL, que han usado el mismo indicador que nosotros
+- Contamos con teorías que suelen usarse en la agenda y que nos permitirían proponer hipótesis.
+
+---
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib, start = 1, end = 5)
+```
+---
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib, start = 6, end = 10)
+```
+
+---
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib, start = 11, end = 14)
+```
+---
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib, start = 15, end = 19)
+```
+
+---
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+RefManageR::PrintBibliography(myBib, start = 20, end = 21)
+```
+
+---
+class: inverse, center, middle
+
+# ¡Muchas Gracias!
+  
